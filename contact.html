@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Kotops</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    </style>
 </head>
 <body>
 
+  <!-- Navigation bar -->
   <nav class="navbar">
     <div class="logo">Kotops</div>
     <div class="links">
@@ -19,19 +18,31 @@
     </div>
   </nav>
 
+  <!-- Contact Form Section -->
   <div class="content">
     <h1>Contact Us</h1>
 
-    <form class="contact-form" action="https://getform.io/f/23f96435-ec53-4a0f-8142-4c4e7e2d9a9b" method="POST">
-      <!-- Redirect after submission -->
+    <!-- Formspree Contact Form -->
+    <form class="contact-form" action="https://formspree.io/f/mldllqok" method="POST">
+      <label>
+        Your Email: 
+        <input type="email" name="email" placeholder="your@email.com" required />
+      </label>
+
+      <label>
+        Your Message:
+        <textarea name="message" placeholder="Write your message here..." rows="5" required></textarea>
+      </label>
+
+      <!-- Optional: Add more fields -->
+      <label>
+        Your Name:
+        <input type="text" name="name" placeholder="Your Name" />
+      </label>
+
+      <!-- Optional: Redirect after form is submitted -->
       <input type="hidden" name="_redirect" value="thank-you.html" />
-      
-      <!-- Form fields -->
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      
-      <!-- Submit button -->
+
       <button type="submit">Send Message</button>
     </form>
   </div>
