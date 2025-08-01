@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Slideshow placeholder -->
   <div class="slideshow"></div>
 
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="logo">Kotops</div>
     <div class="links">
@@ -18,16 +20,20 @@
     </div>
   </nav>
 
+  <!-- Contact Section -->
   <div class="content">
     <h1>Contact Us</h1>
 
-    <!-- Contact form using Formspree -->
-    <form class="contact-form" action="https://formspree.io/f/moqprkqy" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <!-- Embedded Google Form -->
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSe9XbqV8TqFdVAFczoZxniMQiRfuQuzkLrcTyRkBy5sfj1cvQ/viewform?embedded=true" 
+      width="100%" 
+      height="700" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0">
+      Loading…
+    </iframe>
   </div>
 </body>
 </html>
